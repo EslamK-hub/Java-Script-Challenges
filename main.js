@@ -60,3 +60,14 @@ function findNeedle(haystack) {
     return "found the needle at position " + haystack.indexOf("needle");
 }
 console.log(findNeedle(["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"]))
+
+/* =================================== Count of positives / sum of negatives (11) ============================ */
+function countPositivesSumNegatives(input) {
+    if (input == null || input.length == 0) return [];
+    
+    let positivesArray = input.filter(x => x > 0).length;
+    let sumNegatives = input.filter(x => x < 0).reduce((acc, curr) => acc + curr, 0);
+
+    return [positivesArray, sumNegatives];
+}
+console.log(countPositivesSumNegatives([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15]))
