@@ -112,6 +112,23 @@ console.log(basicOp("+", 4, 7));
 
 /* =================================== To square(root) or not to square(root) (14) ============================ */
 function squareOrSquareRoot(array) {
-    return array.map(n => Number.isInteger(Math.sqrt(n)) ? Math.sqrt(n) : n * n)
+    return array.map((n) =>
+        Number.isInteger(Math.sqrt(n)) ? Math.sqrt(n) : n * n,
+    );
 }
 console.log(squareOrSquareRoot([4, 3, 9, 7, 2, 1]));
+
+/* =================================== Count by X (15) ============================ */
+function countBy(x, n) {
+    let newArray = [];
+    for (let i = 1; i <= n; i++) {
+        newArray.push(x * i);
+    }
+    return newArray;
+}
+console.log(countBy(1, 10));
+
+/* =================================== Remove String Spaces (16) ============================ */
+function noSpace(x){
+    return x.split(" ").join('');
+}
