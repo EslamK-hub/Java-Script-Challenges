@@ -129,6 +129,18 @@ function countBy(x, n) {
 console.log(countBy(1, 10));
 
 /* =================================== Remove String Spaces (16) ============================ */
-function noSpace(x){
-    return x.split(" ").join('');
+function noSpace(x) {
+    return x.split(" ").join("");
 }
+
+/* =================================== Invert Values (17) ============================ */
+function invert(array) {
+    return array.map((x) => -x);
+}
+console.log(invert([1, -2, 3, -4, 5]));
+
+/* =================================== Convert boolean values to strings 'Yes' or 'No' (18) ============================ */
+function boolToWord(bool) {
+    return bool ? "Yes" : "No";
+}
+console.log(boolToWord(false));
