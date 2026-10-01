@@ -153,12 +153,25 @@ console.log(reverse("Hello World"));
 
 /* =================================== Keep Hydrated (20) ============================ */
 function litres(time) {
-    return Math.floor(time / 2)
+    return Math.floor(time / 2);
 }
 console.log(litres(6.7));
 
 /* =================================== Convert a Number to a String! (21) ============================ */
 function numberToString(num) {
-  return `${num}`
+    return `${num}`;
 }
 console.log(numberToString(123));
+
+/* =================================== Calculate average (22) ============================ */
+function findAverage(array) {
+    if (array.length === 0) return 0;
+    return array.reduce((acc, curr) => acc + curr, 0) / array.length;
+}
+console.log(findAverage([1, 2, 3, 4]));
+
+/* =================================== Convert a String to a Number! (23) ============================ */
+const stringToNumber = function (str) {
+    return Number(str);
+};
+console.log(stringToNumber("123"));
