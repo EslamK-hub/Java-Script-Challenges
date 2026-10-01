@@ -144,3 +144,21 @@ function boolToWord(bool) {
     return bool ? "Yes" : "No";
 }
 console.log(boolToWord(false));
+
+/* =================================== Reversing Words in a String (19) ============================ */
+function reverse(string) {
+    return string.split(" ").reverse().join(" ");
+}
+console.log(reverse("Hello World"));
+
+/* =================================== Keep Hydrated (20) ============================ */
+function litres(time) {
+    return Math.floor(time / 2)
+}
+console.log(litres(6.7));
+
+/* =================================== Convert a Number to a String! (21) ============================ */
+function numberToString(num) {
+  return `${num}`
+}
+console.log(numberToString(123));
