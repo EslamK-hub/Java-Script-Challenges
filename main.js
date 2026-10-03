@@ -175,3 +175,48 @@ const stringToNumber = function (str) {
     return Number(str);
 };
 console.log(stringToNumber("123"));
+
+/* =================================== Count the Monkeys! (24) ============================ */
+function monkeyCount(n) {
+    let newArray = [];
+    for (let i = 1; i <= n; i++) {
+        newArray.push(i);
+    }
+    return newArray;
+}
+console.log(monkeyCount(10));
+
+/* =================================== Welcome! (25) ============================ */
+function greet(language) {
+    let languages = {
+        english: "Welcome",
+        czech: "Vitejte",
+        danish: "Velkomst",
+        dutch: "Welkom",
+        estonian: "Tere tulemast",
+        finnish: "Tervetuloa",
+        flemish: "Welgekomen",
+        french: "Bienvenue",
+        german: "Willkommen",
+        irish: "Failte",
+        italian: "Benvenuto",
+        latvian: "Gaidits",
+        lithuanian: "Laukiamas",
+        polish: "Witamy",
+        spanish: "Bienvenido",
+        swedish: "Valkommen",
+        welsh: "Croeso",
+    };
+
+    return languages.hasOwnProperty(language)
+        ? languages[language]
+        : languages["english"];
+}
+console.log(greet("Arabic"));
+
+/* =================================== Sentence Smash (26) ============================ */
+function smash(words) {
+    return words.join(' ');
+}
+console.log(smash(['hello', 'world', 'this', 'is', 'great']))
+
