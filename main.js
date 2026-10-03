@@ -216,7 +216,61 @@ console.log(greet("Arabic"));
 
 /* =================================== Sentence Smash (26) ============================ */
 function smash(words) {
-    return words.join(' ');
+    return words.join(" ");
 }
-console.log(smash(['hello', 'world', 'this', 'is', 'great']))
+console.log(smash(["hello", "world", "this", "is", "great"]));
 
+/* =================================== Switch it Up! (27) ============================ */
+function switchItUp(number) {
+    switch (number) {
+        case 0:
+            return "Zero";
+        case 1:
+            return "One";
+        case 2:
+            return "Two";
+        case 3:
+            return "Three";
+        case 4:
+            return "Four";
+        case 5:
+            return "Five";
+        case 6:
+            return "Six";
+        case 7:
+            return "Seven";
+        case 8:
+            return "Eight";
+        case 9:
+            return "Nine";
+        default:
+            return 0;
+    }
+}
+console.log(switchItUp(1));
+
+/* =================================== Do I get a bonus? (28) ============================ */
+function bonusTime(salary, bonus) {
+    return bonus ? `\u00A3${salary * 10}` : `£${salary}`;
+}
+console.log(bonusTime(1000, true));
+
+/* =================================== Exclamation marks (29) ============================ */
+function remove(string) {
+    return string.replace(/!$/, "");
+}
+console.log(remove("Hi!"));
+
+/* =================================== Are You Playing Banjo? (30) ============================ */
+function areYouPlayingBanjo(name) {
+    return name.charAt(0) === "R" || name.charAt(0) === "r"
+        ? name + " plays banjo"
+        : name + " does not play banjo";
+}
+console.log(areYouPlayingBanjo("Mohamed"));
+
+/* =================================== Removing Elements (31) ============================ */
+function removeEveryOther(arr){
+    return arr.filter((x, i) => i % 2 === 0)
+}
+console.log(removeEveryOther(["Keep", "Remove", "Keep", "Remove", "Keep"]));
