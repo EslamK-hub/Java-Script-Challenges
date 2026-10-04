@@ -270,7 +270,23 @@ function areYouPlayingBanjo(name) {
 console.log(areYouPlayingBanjo("Mohamed"));
 
 /* =================================== Removing Elements (31) ============================ */
-function removeEveryOther(arr){
-    return arr.filter((x, i) => i % 2 === 0)
+function removeEveryOther(arr) {
+    return arr.filter((x, i) => i % 2 === 0);
 }
 console.log(removeEveryOther(["Keep", "Remove", "Keep", "Remove", "Keep"]));
+
+/* =================================== Unfinished Loop - Bug Fixing #1 (32) ============================ */
+function createArray(number) {
+    const newArray = [];
+    for (let counter = 1; counter <= number; counter++) {
+        newArray.push(counter);
+    }
+    return newArray;
+}
+
+/* =================================== Transportation on vacation (33) ============================ */
+function rentalCarCost(d) {
+    let total = d * 40;
+    return d >= 7 ? total - 50 : d >= 3 ? total - 20 : total;
+}
+console.log(rentalCarCost(1));
