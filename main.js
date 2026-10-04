@@ -290,3 +290,18 @@ function rentalCarCost(d) {
     return d >= 7 ? total - 50 : d >= 3 ? total - 20 : total;
 }
 console.log(rentalCarCost(1));
+
+/* =================================== Exclusive "or" (xor) Logical Operator (34) ============================ */
+function xor(a, b) {
+    return a === b ? false : true;
+}
+console.log(xor(false, false));
+
+/* =================================== Find the first non-consecutive number (35) ============================ */
+function firstNonConsecutive(arr) {
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] - 1 !== arr[i - 1]) return arr[i];
+    }
+    return null;
+}
+console.log(firstNonConsecutive([6, 7, 8, 9, 10, 11, 13, 14, 15]));
