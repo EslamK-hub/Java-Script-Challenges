@@ -319,3 +319,49 @@ function twoDecimalPlaces(n) {
     return Number(n.toFixed(2));
 }
 console.log(twoDecimalPlaces(5.5589));
+
+/* =================================== Dollars and Cents (38) ============================ */
+function formatMoney(amount) {
+    return `$${amount.toFixed(2)}`;
+}
+console.log(formatMoney(3));
+
+/* =================================== Find the position! (39) ============================ */
+function position(letter) {
+    let alphabet = [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "j",
+        "k",
+        "l",
+        "m",
+        "n",
+        "o",
+        "p",
+        "q",
+        "r",
+        "s",
+        "t",
+        "u",
+        "v",
+        "w",
+        "x",
+        "y",
+        "z",
+    ];
+    return `Position of alphabet: ${alphabet.indexOf(letter) + 1}`;
+}
+console.log(position("a"));
+
+/* =================================== Opposites Attract (40) ============================ */
+function lovefunc(flower1, flower2) {
+    return flower1 % 2 !== flower2 % 2
+}
+console.log(lovefunc(2, 3));
