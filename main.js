@@ -305,3 +305,17 @@ function firstNonConsecutive(arr) {
     return null;
 }
 console.log(firstNonConsecutive([6, 7, 8, 9, 10, 11, 13, 14, 15]));
+
+/* =================================== Volume of a Cuboid (36) ============================ */
+class Kata {
+    static getVolumeOfCuboid(length, width, height) {
+        return length * width * height;
+    }
+}
+console.log(Kata.getVolumeOfCuboid(1, 2, 3));
+
+/* =================================== Formatting decimal places #0 (37) ============================ */
+function twoDecimalPlaces(n) {
+    return Number(n.toFixed(2));
+}
+console.log(twoDecimalPlaces(5.5589));
