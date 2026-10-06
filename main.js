@@ -362,6 +362,16 @@ console.log(position("a"));
 
 /* =================================== Opposites Attract (40) ============================ */
 function lovefunc(flower1, flower2) {
-    return flower1 % 2 !== flower2 % 2
+    return flower1 % 2 !== flower2 % 2;
 }
 console.log(lovefunc(2, 3));
+
+/* =================================== No zeros for heroes (41) ============================ */
+function noBoringZeros(n) {
+    let str = String(n);
+    while (str.endsWith(0)) {
+        str = str.slice(0, str.length - 1);
+    }
+    return Number(str);
+}
+console.log(noBoringZeros(960000));
