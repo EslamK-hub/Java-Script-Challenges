@@ -375,3 +375,22 @@ function noBoringZeros(n) {
     return Number(str);
 }
 console.log(noBoringZeros(960000));
+
+/* =================================== Get the mean of an array (42) ============================ */
+function getAverage(marks) {
+    return Math.floor(
+        marks.reduce((acc, curr) => acc + curr, 0) / marks.length,
+    );
+}
+console.log(getAverage([1, 2, 3, 4]));
+
+/* =================================== Vowel remover (43) ============================ */
+function shortcut(string) {
+    const vowels = ["a", "e", "i", "o", "u"];
+    let result = [];
+    for (let i = 0; i < string.length; i++) {
+        if (!vowels.includes(string[i])) result.push(string[i]);
+    }
+    return result.join("")
+}
+console.log(shortcut("hello"));
