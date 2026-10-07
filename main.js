@@ -391,6 +391,18 @@ function shortcut(string) {
     for (let i = 0; i < string.length; i++) {
         if (!vowels.includes(string[i])) result.push(string[i]);
     }
-    return result.join("")
+    return result.join("");
 }
 console.log(shortcut("hello"));
+
+/* =================================== Remove exclamation marks (44) ============================ */
+function removeExclamationMarks(s) {
+    return s.replaceAll("!", "");
+}
+console.log(removeExclamationMarks("hel!lo!"));
+
+/* =================================== Reversed Strings (45) ============================ */
+function solution(str){
+    return str.split("").reverse().join("")
+}
+console.log(solution("world"));
