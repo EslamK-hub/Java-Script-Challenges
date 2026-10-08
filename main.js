@@ -406,3 +406,15 @@ function solution(str){
     return str.split("").reverse().join("")
 }
 console.log(solution("world"));
+
+/* =================================== Beginner - Reduce but Grow (46) ============================ */
+function grow(x){
+    return x.reduce((acc, curr) => acc * curr)
+}
+console.log(grow([1, 2, 3, 4]));
+
+/* =================================== Is it a palindrome? (47) ============================ */
+function isPalindrome(x) {
+   return (x.toLowerCase() === x.toLowerCase().split("").reverse().join(""))
+}
+console.log(isPalindrome("CwDmKZAy"));
