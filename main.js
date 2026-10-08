@@ -402,19 +402,29 @@ function removeExclamationMarks(s) {
 console.log(removeExclamationMarks("hel!lo!"));
 
 /* =================================== Reversed Strings (45) ============================ */
-function solution(str){
-    return str.split("").reverse().join("")
+function solution(str) {
+    return str.split("").reverse().join("");
 }
 console.log(solution("world"));
 
 /* =================================== Beginner - Reduce but Grow (46) ============================ */
-function grow(x){
-    return x.reduce((acc, curr) => acc * curr)
+function grow(x) {
+    return x.reduce((acc, curr) => acc * curr);
 }
 console.log(grow([1, 2, 3, 4]));
 
 /* =================================== Is it a palindrome? (47) ============================ */
 function isPalindrome(x) {
-   return (x.toLowerCase() === x.toLowerCase().split("").reverse().join(""))
+    return x.toLowerCase() === x.toLowerCase().split("").reverse().join("");
 }
 console.log(isPalindrome("CwDmKZAy"));
+
+/* =================================== Grasshopper - Summation (48) ============================ */
+var summation = function (num) {
+    let result = 0
+    for (let i = 0; i <= num; i++){
+        result += i
+    }
+    return result
+};
+console.log(summation(8));
