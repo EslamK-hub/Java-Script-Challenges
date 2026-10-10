@@ -421,10 +421,16 @@ console.log(isPalindrome("CwDmKZAy"));
 
 /* =================================== Grasshopper - Summation (48) ============================ */
 var summation = function (num) {
-    let result = 0
-    for (let i = 0; i <= num; i++){
-        result += i
+    let result = 0;
+    for (let i = 0; i <= num; i++) {
+        result += i;
     }
-    return result
+    return result;
 };
 console.log(summation(8));
+
+/* =================================== Printing Array elements with Comma delimiters (49) ============================ */
+function printArray(array) {
+    return array.join(",")
+}
+console.log(printArray(["h","o","l","a"]));
