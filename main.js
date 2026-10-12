@@ -491,3 +491,15 @@ function stairsIn20(s) {
 }
 const stairs = [sunday, monday, tuesday, wednesday, thursday, friday, saturday];
 console.log(stairsIn20(stairs));
+
+/* =================================== Remove First and Last Character (51) ============================ */
+function removeChar(str) {
+    return str.slice(1, -1);
+}
+console.log(removeChar("person"));
+
+/* =================================== Square(n) Sum (52) ============================ */
+function squareSum(numbers) {
+    return numbers.map((n) => n * n).reduce((acc, curr) => acc + curr, 0);
+}
+console.log(squareSum([1, 2, 2]));
