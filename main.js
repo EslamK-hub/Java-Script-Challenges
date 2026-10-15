@@ -509,3 +509,9 @@ function findSmallestInt(arr) {
     return Math.min(...arr);
 }
 console.log(findSmallestInt([34, 15, 88, 2]));
+
+/* =================================== Is n divisible by x and y? (54) ============================ */
+function isDivisible(n, x, y) {
+    return n % x == 0 && n % y == 0;
+}
+console.log(isDivisible(3, 1, 3));
