@@ -503,3 +503,9 @@ function squareSum(numbers) {
     return numbers.map((n) => n * n).reduce((acc, curr) => acc + curr, 0);
 }
 console.log(squareSum([1, 2, 2]));
+
+/* =================================== Find the smallest integer in the array (53) ============================ */
+function findSmallestInt(arr) {
+    return Math.min(...arr);
+}
+console.log(findSmallestInt([34, 15, 88, 2]));
