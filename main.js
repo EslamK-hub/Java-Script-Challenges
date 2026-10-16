@@ -515,3 +515,18 @@ function isDivisible(n, x, y) {
     return n % x == 0 && n % y == 0;
 }
 console.log(isDivisible(3, 1, 3));
+
+/* =================================== Beginner - Lost Without a Map (55) ============================ */
+function maps(x) {
+    return x.map((n) => n * 2);
+}
+console.log(maps([1, 2, 3]));
+
+/* =================================== Fake Binary (56) ============================ */
+function fakeBin(x) {
+    return x
+        .split("")
+        .map((n) => (n < "5" ? "0" : "1"))
+        .join("");
+}
+console.log(fakeBin("45385593107843568"));
