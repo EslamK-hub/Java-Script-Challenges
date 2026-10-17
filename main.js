@@ -536,3 +536,15 @@ function sum(numbers) {
     return numbers.reduce((acc, curr) => acc + curr, 0);
 }
 console.log(sum([1, 5.2, 4, 0, -1]));
+
+/* =================================== Simple multiplication (58) ============================ */
+function simpleMultiplication(number) {
+    return number % 2 === 0 ? number * 8 : number * 9;
+}
+console.log(simpleMultiplication(2));
+
+/* =================================== MakeUpperCase (59) ============================ */
+function makeUpperCase(str) {
+    return str.toUpperCase();
+}
+console.log(makeUpperCase("hello"));
