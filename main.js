@@ -548,3 +548,15 @@ function makeUpperCase(str) {
     return str.toUpperCase();
 }
 console.log(makeUpperCase("hello"));
+
+/* =================================== Array plus array (60) ============================ */
+function arrayPlusArray(arr1, arr2) {
+    return arr1.concat(arr2).reduce((acc, curr) => acc + curr, 0);
+}
+console.log(arrayPlusArray([1, 2, 3], [4, 5, 6]));
+
+/* =================================== Sum Mixed Array (61) ============================ */
+function sumMix(x) {
+    return x.map((n) => Number(n)).reduce((acc, curr) => acc + curr, 0);
+}
+console.log(sumMix([9, 3, "7", "3"]));
