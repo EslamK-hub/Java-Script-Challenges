@@ -560,3 +560,9 @@ function sumMix(x) {
     return x.map((n) => Number(n)).reduce((acc, curr) => acc + curr, 0);
 }
 console.log(sumMix([9, 3, "7", "3"]));
+
+/* =================================== The Feast of Many Beasts (62) ============================ */
+function feast(beast, dish) {
+    return beast[0] === dish[0] && beast[beast.length - 1] === dish[dish.length - 1]
+}
+console.log(feast("great blue heron", "garlic naan"));
