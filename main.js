@@ -563,6 +563,21 @@ console.log(sumMix([9, 3, "7", "3"]));
 
 /* =================================== The Feast of Many Beasts (62) ============================ */
 function feast(beast, dish) {
-    return beast[0] === dish[0] && beast[beast.length - 1] === dish[dish.length - 1]
+    return (
+        beast[0] === dish[0] &&
+        beast[beast.length - 1] === dish[dish.length - 1]
+    );
 }
 console.log(feast("great blue heron", "garlic naan"));
+
+/* =================================== Thinkful - Logic Drills: Traffic light (63) ============================ */
+function updateLight(current) {
+    return current === "yellow" ? "red" : current === "green" ? "yellow" : "green"
+}
+console.log(updateLight("green"));
+
+/* =================================== L1: Set Alarm (64) ============================ */
+function setAlarm(employed, vacation){
+    return employed && !vacation
+}
+console.log(setAlarm(true, true));
