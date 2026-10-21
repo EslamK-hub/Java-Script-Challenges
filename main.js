@@ -572,12 +572,22 @@ console.log(feast("great blue heron", "garlic naan"));
 
 /* =================================== Thinkful - Logic Drills: Traffic light (63) ============================ */
 function updateLight(current) {
-    return current === "yellow" ? "red" : current === "green" ? "yellow" : "green"
+    return current === "yellow"
+        ? "red"
+        : current === "green"
+          ? "yellow"
+          : "green";
 }
 console.log(updateLight("green"));
 
 /* =================================== L1: Set Alarm (64) ============================ */
-function setAlarm(employed, vacation){
-    return employed && !vacation
+function setAlarm(employed, vacation) {
+    return employed && !vacation;
 }
 console.log(setAlarm(true, true));
+
+/* =================================== Quarter of the year (65) ============================ */
+const quarterOf = (month) => {
+    return month < 4 ? 1 : month < 7 ? 2 : month < 10 ? 3 : 4;
+};
+console.log(quarterOf(11));
