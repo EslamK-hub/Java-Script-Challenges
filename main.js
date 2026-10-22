@@ -591,3 +591,15 @@ const quarterOf = (month) => {
     return month < 4 ? 1 : month < 7 ? 2 : month < 10 ? 3 : 4;
 };
 console.log(quarterOf(11));
+
+/* =================================== Add Length (66) ============================ */
+function addLength(str) {
+    return str.split(" ").map((e) => e + " " + e.length);
+}
+console.log(addLength("apple ban"));
+
+/* =================================== How many lightsabers do you own? (67) ============================ */
+function howManyLightsabersDoYouOwn(name) {
+    return name === "Zach" ? 18 : 0;
+}
+console.log(howManyLightsabersDoYouOwn("Zach"));
