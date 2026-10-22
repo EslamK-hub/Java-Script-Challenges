@@ -603,3 +603,17 @@ function howManyLightsabersDoYouOwn(name) {
     return name === "Zach" ? 18 : 0;
 }
 console.log(howManyLightsabersDoYouOwn("Zach"));
+
+/* =================================== Twice as old (68) ============================ */
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+    return Math.abs(dadYearsOld - sonYearsOld * 2);
+}
+console.log(twiceAsOld(36, 7));
+
+/* =================================== Keep up the hoop (69) ============================ */
+function hoopCount(n) {
+    return n >= 10
+        ? "Great, now move on to tricks"
+        : "Keep at it until you get it";
+}
+console.log(hoopCount(11));
