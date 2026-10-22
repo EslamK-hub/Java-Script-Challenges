@@ -617,3 +617,20 @@ function hoopCount(n) {
         : "Keep at it until you get it";
 }
 console.log(hoopCount(11));
+
+/* =================================== Correct the mistakes of the character recognition software (70) ============================ */
+function correct(string) {
+    return string
+        .split("")
+        .map((e) =>
+            e === "0"
+                ? e.replace(0, "O")
+                : e === "5"
+                  ? e.replace("5", "S")
+                  : e === "1"
+                    ? e.replace("1", "I")
+                    : e,
+        )
+        .join("");
+}
+console.log(correct("L0ND0N"));
