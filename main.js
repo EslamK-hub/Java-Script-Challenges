@@ -634,3 +634,20 @@ function correct(string) {
         .join("");
 }
 console.log(correct("L0ND0N"));
+
+/* =================================== How good are you really? (71) ============================ */
+function betterThanAverage(classPoints, yourPoints) {
+    return (
+        classPoints.reduce((acc, curr) => acc + curr, 0) / classPoints.length <
+        yourPoints
+    );
+}
+console.log(betterThanAverage([2, 3], 5));
+
+/* =================================== Reversed Words (72) ============================ */
+function reverseWords(str) {
+    return str.split(" ").reverse().join(" ");
+}
+console.log(
+    reverseWords("The greatest victory is that which requires no battle"),
+);
